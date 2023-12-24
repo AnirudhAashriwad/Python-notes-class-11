@@ -1,0 +1,1033 @@
+python - programing lang
+
+jupyter notebook - app/environment/interface
+
+	- share
+
+	- online
+
+	- edit
+
+anaconda - app/env/interface
+
+	- more tools like gdb, pip, command line
+
+	- glorified vscode 
+
+	- IDE - integrated dev env
+
+spyder too.
+
+
+
+programming - scheduling/ instructing
+
+linear programming - math problem
+
+computer programming - language use
+
+
+
+python can be used to give instructions to the comp
+
+
+
+python - inspired by ABC and Modula-3
+
+fortran - 1950s scientific computation
+
+
+
+OO lang - Object Oriented lang
+
+python is actually not a pure oop lang
+
+every Object has 2 things - properties, functionalities
+
+objects are able to interact with other objects
+
+Class vs Object
+
+
+
+interpreted vs compiled
+
+compiling    = preprocessing + object code + loading + linking + executing
+
+interpreting = only executing (though line by line)
+
+python is an interpreted lang
+
+
+
+			Compiled language 			     	Interpreted language
+
+	- all source code is analysed in      - source code is analysed line by line
+
+	its entirity.
+
+
+
+	- have to handle ALL errors before    - not necessary
+
+	running.
+
+
+
+	- faster                              - slower
+
+	- hard to change                      - easy to change
+
+
+
+
+
+
+
+cross platform - almost all OSes Windows, Linux, Android, MacOS, iOS, FreeBSD
+
+
+
+python is fairly complete (you can find library for almost anything). 
+
+python has a huge community.
+
+so many libraries.
+
+
+
+python is free and open source 
+
+
+
+variety of usage - game, website, scripting, sysadmin, IoT, embedded
+
+
+
+disadvantages:
+
+	- slow
+
+	- less libraries than C, Java etc
+
+	- weakly typed
+
+	- not convertible, easily to other language
+
+
+
+
+
+using IDLE:
+
+	- interactive mode when opened
+
+	- new file(ctrl N), run by F5
+
+
+
+using cmd:
+
+	- open terminal in the folder where python program is.
+
+	- type "python <program_name.py>"
+
+	- the program is executed
+
+	- need to add python to PATH for this 
+
+
+
+			###  22.09.2023 20:30 IST  ###
+
+
+
+- boolean operators
+
+	==  (is equal to)
+
+		a == b (suppose a=4, b=5, returns False)
+
+	!= (not equal to)
+
+		a != b (suppose a=4, b=5, returns True)
+
+
+
+	use of `not` keyword in python
+
+		not(a == b) (suppose a=4, b=5, returns True)
+
+		-> a != b
+
+
+
+		not (a==b) -> a !=b
+
+		not (a!=b) -> a ==b
+
+
+
+- identity operator
+
+	
+
+	`is` keyword in python
+
+
+
+	id() is a function that gives a variable a number, based on its value
+
+
+
+	a = 23
+
+	b = 23
+
+	a is b -> True
+
+	id (a) -> 140735011808744
+
+	id (b) -> 140735011808744
+
+
+
+- bitwise operators
+
+	
+
+    1101101 (109)
+
+  & 1010110 (86)
+
+    1000100 (68)
+
+
+
+    => 109 & 86 = 68
+
+
+
+   similarly | (bitwise or)  and  ^ (bitwise xor)
+
+
+
+    1101101 (109)
+
+  ^ 1010110 (86)
+
+    0111011 (59)
+
+
+
+    => 109 ^ 86 = 59
+
+
+
+
+
+- if statements
+
+
+
+	if accepts a boolean in front of it.
+
+
+
+	case 1
+
+	if (TRUE) :
+
+		{if block} -> executes
+
+	else :
+
+		{else block} -> doesn't execute
+
+
+
+	case 2
+
+	if (FALSE) :
+
+		{if block} -> doesn't execute
+
+	else :
+
+		{else block} -> executes
+
+
+
+	# bool <boolean operation> bool -> bool
+
+
+
+
+
+				### 24th Sep 2023 ###
+
+
+
+loops
+
+
+
+range()
+
+
+
+				### 26th Sep 2023 ###
+
+
+
+range(start=0, stop, st) -> constructor that can take max 3 integers
+
+
+
+list    -> data structure
+
+list()  -> constructor that makes an iterable
+
+
+
+range(start, stop, step) -> step  is 1 by default
+
+												 -> start is 0 by default
+
+range(1,10,3) -> 1 4 7
+
+
+
+range is an `iterable`
+
+
+
+iterative -> iteration -> meaning repetition
+
+
+
+list -> stores multiple values ~ in an order ~
+
+				- jemiti deiche semiti paiba
+
+		 -> those values can be accessed using an index
+
+		    - ((most things)) start from 0
+
+		    - listname[index] # list[2] -> list ra 3rd element
+
+		 -> list is a data structure but it also is an iterable
+
+
+
+`in` keyword
+
+checks if a value is in an iterable
+
+
+
+<value> in <iterable>
+
+
+
+... to be completed by pruthi
+
+
+
+				### 1st Oct 2023 ###
+
+
+
+more Strings and Lists
+
+
+
+what is a string?
+
+	- inverted comma bhitare jaha rahe
+
+
+
+	- a string is a collection of letters(characters)
+
+
+
+so list and strings both are iterables
+
+
+
+				### 2nd Oct 2023 ###
+
+				
+
+		lists are mutable (i.e. they can be changed.)
+
+			- by accessing their index
+
+		strings are immutable, their elements can not be changed.
+
+			- you can access their indices, but can't modify them.
+
+
+
+		Slicing:
+
+			a[start:end:step]
+
+			>>>b = "abcdefg"
+
+			>>>b[3:]
+
+			'defg'
+
+			>>>b[:3]
+
+			'abc'
+
+			>>>b == b[:3] + b[3:]
+
+			True
+
+			>>>b[:3] == b[0] + b[1] + b[2]
+
+			True
+
+			>>>b[3:] == b[3] + b[4] + b[5] + b[6]
+
+			True
+
+			>>>b[::-1]
+
+			'gfedcba'
+
+
+
+
+
+		methods:
+
+			a method is function that can be called on an object
+
+			- an object - every variable is an object (in OOP languages e.g. Python) 
+
+			- function 
+
+				examples - abs(), print(), len(), range(), int(), input()
+
+				a function is a peice of code that does does something 
+
+				but has a name and takes some input.
+
+			- called
+
+				who is called? A function is called. It is used.
+
+
+
+		string and list has some methods defined for them.
+
+		List methods:
+
+			- append(ele) : adds an element to list
+
+			- index(ele) : returns the index of an first element found in list
+
+			- insert(index, ele) : places element before the index
+
+			- pop(index) : deletes the item at given index; default is last
+
+			- remove(ele) : deletes the first element found
+
+			- extend(list) : adds the list to original list
+
+			- reverse() : reverse a list
+
+			- sort(reverse) : sorts a list in ascending order.
+
+					-> set `reverse=True` to do in descending order.
+
+
+
+		String methods:
+
+			- split(ele) : splits the string into an list of smaller strings
+
+										 separated by the element given; default is space.
+
+			- isalnum() : checks if all characters in string are alphanumeric
+
+										alpha[a-z,A-Z] numeric[0-9].
+
+
+
+			# TODO: Write a program that checks if a string is alphabetic. Dont use built in methods for strings. Extra: check for alphanumeric.#
+
+
+
+			- isalpha() : same but checks only if chars alphabetic
+
+			- isnumeric() : checks only if chars are numeric.
+
+			- upper() : changes to upper case, all characters.
+
+			- lower() : changes to lower case, all characters.
+
+			- find(substr, start, end) : searches within str[start:end]
+
+																	 returns the index, if found.
+
+																	         -1 if not found.
+
+			- replace(old, new, count): replaces `count` no. of old substring
+
+																	with new substring; replaces all by default.
+
+
+
+						### 3rd Oct 2023 ###
+
+
+
+						TEST and EXERCISE
+
+			Q1. (+1 points)
+
+			a = 2
+
+			print('a'*2**2)
+
+			>>>aaaa
+
+
+
+			mistake :
+
+				- confused string 'a' with a the variable
+
+				- how will we do power on string?
+
+				- the power operation is done first, because of `PRECEDENCE`.
+
+				2 + 2 * 3
+
+				2 + 6 (because precedence of * is greater than +)
+
+				8
+
+					** 
+
+					* / // %
+
+					+ -
+
+			Q2. (+1 points)
+
+			Q3. (-1 points) // silly mistake
+
+			Q4. (+1 points)
+
+			print('a' + a + a*a + 'a'*a)
+
+			>>>'a+6+aa'(mistake)
+
+				- thought str + int is possible
+
+
+
+			string addition: str, str (takes 2 strings and adds them together)
+
+			string multiplication: str, int (repeats the string n times)
+
+			no deviation.
+
+			"a"*2
+
+			>>>'aa'
+
+			2 == 2.000
+
+			>>>True
+
+			"a"*2.000
+
+			>>>Traceback (most recent call last):
+
+			  File "<pyshell#16>", line 1, in <module>
+
+			    "a"*2.000
+
+			TypeError: can't multiply sequence by non-int of type 'float'
+
+
+
+			Q5.(-1 point +2 point for trying )
+
+			print('a'*3+((2**3)+3)*'aa')
+
+			14 ta 'a' (wrong)
+
+			correct: 25 ta 'a'
+
+
+
+				- confused 'aa' with 'a'
+
+				- then why didn't he say 3 'a' and 11 'aa'?
+
+				- lack in scientific thinking.
+
+				- one must report the result as seen on paper, never manipulate it behind mind.
+
+
+
+			# smol revision
+
+			 111
+
+			&101
+
+			 101 (boolean logic)
+
+			This logic works on boolean values.
+
+			In computer, a True is a `1`; and a False is `0`.
+
+
+
+			Q6.(+10 points)
+
+			print(2**True*2+(2==5//2)*3)
+
+			7 (correct)
+
+			Took ~10 minutes but he did it!!
+
+
+
+			was confused about 2**True first.
+
+			2**True -> True he thought.
+
+			2**True == 2**1 == 2 he realised, on his own.
+
+
+
+			Total = 13 points
+
+
+
+
+
+				### 4th Oct 2023 ###
+
+
+
+			Test and practice (season - 02)
+
+			topic- list, str, loops
+
+			
+
+			Q1.(-2 for ignorance, +3 for trying, +1 for new knowledge)
+
+			s = 0
+
+			for i in range(1,10):
+
+			    s = s+i 
+
+			print(s)
+
+			>>>1 2 3 4 5 6 7 8 9 (wrong)
+
+
+
+			mistakes:
+
+				- didnt know the significance of indentation.
+
+				- thought print is called 10 times
+
+				- missed the `s`
+
+			2nd try:
+
+			1
+
+			3
+
+			6
+
+			10
+
+			15
+
+			21
+
+			28
+
+			36
+
+			45 (wrong)
+
+				- thought print is called 10 times, again.
+
+				- missed the fact that re-assignment overwrites the data
+
+
+
+			sum(iterable) -> returns the sum of all elements in that iterable
+
+			sum(range(1,10)) -> 45
+
+			sum([1,2,5,3,7,9]) -> 27
+
+			sum([1,-2,5,-3,7,-9]) -> -1
+
+
+
+			Q2.(+2 points for first try correct)
+
+			s = 0
+
+			for i in range(1,10,3):
+
+			    s = s+i 
+
+			
+
+			print(s)
+
+			>>>12 (correct!)
+
+
+
+			Q3.(+3 points for 1st try coorect and consistency)
+
+			s = 0
+
+			for i in range(-23,-27,-3):
+
+			    s = s-i 
+
+			
+
+			print(s)
+
+			>>>49 (correct!)
+
+
+
+			Q4. (+1 points for knowledge gain)
+
+			s = []
+
+			for i in range(5):
+
+			    s[i] = i*2
+
+			
+
+			print(s)
+
+			>>> gave up :(
+
+			explanation:
+
+				s = [] # s is an empty list
+
+				range(5) -> 0 1 2 3 4
+
+				i = 0
+
+				s[0] = 0*2
+
+				>>>> errorrrrrrr......
+
+				
+
+				what does s[0] mean? first element of s.
+
+				what is the first element of s?
+
+				there is no element, thus triggering an error.
+
+				
+
+				rule: index is always less than length.
+
+
+
+				Q5. (+2 points for almost correct)
+
+				s = []
+
+				for i in range(5): 
+
+				    s.append(i*2)
+
+				    
+
+				print(s) 
+
+				>>> 0 2 4 6 8
+
+				actual [0, 2, 4, 6, 8]
+
+
+
+				Total 12 points. 
+
+
+
+				### 7 Oct 2023 ###
+
+
+
+			topic - more loop logic
+
+			goal: to be able to print this:
+
+			
+
+			*****
+
+			 ***
+
+			  *
+
+			 ***
+
+			*****
+
+			you will do this.
+
+
+
+
+
+				### 16th Oct 2023 ###
+
+
+
+			topic - revision
+
+
+
+			boolean logic
+
+
+
+			True, False   0,1
+
+
+
+			and, or, not,
+
+			nor = not or
+
+			nand, 
+
+			xor = ab' | ba'
+
+
+
+			and 
+
+			A|B  A and B (A&B)
+
+			0|0  0
+
+			0|1  0
+
+			1|0  0
+
+			1|1  1
+
+			
+
+			or 
+
+			A|B  A or B (A|B)
+
+			0|0  0
+
+			0|1  1
+
+			1|0  1
+
+			1|1  1
+
+			
+
+			not
+
+			A  not A (~A)
+
+			0  1
+
+			1  0
+
+
+
+			xor
+
+			A|B  A xor B (A^B)
+
+			0|0  0
+
+			0|1  1
+
+			1|0  1
+
+			1|1  0
+
+
+
+			laws 
+
+			
+
+			- compliment law
+
+			~~A = A
+
+			
+
+			- De Morgan's law
+
+			~(X and Y) = ~X or  ~Y
+
+			~(X or  Y) = ~X and ~Y
+
+
+
+			~(A or ~(B and C)) 
+
+			X = A, Y = ~(B and C) 
+
+			~(X or Y) = ~A and ~~(B and C)
+
+					  = ~A and B and C
+
+
+
+
+
+
+
+			a = 5
+
+			b = 6
+
+			binary(a) = 101
+
+			binary(b) = 110
+
+			a & b     = 100 = 4
+
+			a | b     = 111 = 7
+
+			a ^ b     = 011 = 3
+
+
+
+			for i in range(1,10):
+
+			    if (i%3 == 0):
+
+			        continue
+
+			    elif(i%2 == 0):
+
+			        print(i)
+
+			    else:
+
+			        pass
+
+			        
+
+			pruthi -> 1,2,4,5,7,8
+
+			actual -> 2,4,8
+
+
+
+
+
+			while(i>0):
+
+			    if(i%2 == 0):
+
+			        print(i)
+
+			    else:
+
+			        print('odd')
+
+			    i = i-1
+
+
+
+			pruthi -> 9
+
+			actual -> 10, odd,  8, odd,  6, odd, 4, odd, 2, odd
+
+			
+
+			ASCII - American Standard Code for Information Interchange
+
+			UTF   - Unicode Transformation Format
+
+			
+
+				###  17 Dec 2023 8:55 PM ###
+
+
+
+		Topic: Tuples
+
+		t = (1,2,3,4)
+
+		# a tuple is an immutable data type
+
+		# the variable is changeable, not the tuple in it.
+
+
+
+		>>> t = 1,2,3,4,5,
+
+		>>> t
+
+		>>> (1, 2, 3, 4, 5)
+
+		>>> t = 1,2,3,4,5
+
+		>>> t
+
+		>>> (1, 2, 3, 4, 5)
+
+
+
+		# unpacking
+
+		'''
+
+		a tuple has n elements, we can store these
+
+		n elements in n variables. mostly used in loops.
+
+		'''
+
+		
+
+		# tuple is used for representation.
+
+		# complex number a + jb -> (a,b)
+
+		# coordinate (x,y,z)
+
+		# excel sheet (column1, column2, ...)
+
+		# fractions p/q -> (p,q)
